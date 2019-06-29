@@ -6,7 +6,8 @@ import { ReCaptchaRequest } from './ReCaptchaRequest';
 export class ReCaptchaHttpClient implements ReCaptchaClient {
   constructor(
     readonly apiUrl: string = 'https://www.google.com/recaptcha/api/siteverify'
-  ) {}
+  ) {
+  }
 
   send(request: ReCaptchaRequest): Promise<ReCaptchaResponse> {
     return fetch(this.apiUrl, {
@@ -15,6 +16,6 @@ export class ReCaptchaHttpClient implements ReCaptchaClient {
       headers: {
         'Content-Type': 'application/json'
       }
-    }).then((res: Response) => res.json())
+    }).then((res: Response) => res.json());
   }
 }

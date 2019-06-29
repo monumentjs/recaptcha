@@ -22,9 +22,9 @@ describe('ReCaptchaValidator', function() {
 
   it('should throw if error', async () => {
     const client = new ReCaptchaFakeClient({
-      success: false,
-      hostname: HOST_NAME,
-      challenge_ts: TIMESTAMP,
+      'success': false,
+      'hostname': HOST_NAME,
+      'challenge_ts': TIMESTAMP,
       'error-codes': [
         ReCaptchaErrorCode.BAD_REQUEST
       ]

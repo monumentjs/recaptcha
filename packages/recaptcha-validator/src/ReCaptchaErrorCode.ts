@@ -1,6 +1,5 @@
-export enum ReCaptchaErrorCode {
-  UNKNOWN = 'unknown',
 
+export enum ReCaptchaErrorCode {
   /**
    * The secret parameter is missing.
    */

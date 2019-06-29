@@ -11,10 +11,10 @@ export class ReCaptchaValidator {
   ) {
   }
 
-  validate(response: string, remoteIp?: string): Promise<ReCaptchaValidationResult> {
+  validate(token: string, remoteIp?: string): Promise<ReCaptchaValidationResult> {
     return this.client.send({
       secret: this.secret,
-      response: response,
+      response: token,
       remoteip: remoteIp
     }).then((response: ReCaptchaResponse) => {
       if (!response.success) {
