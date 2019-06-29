@@ -1,13 +1,33 @@
 {
   "name": "@monument/recaptcha-validator",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Google reCAPTCHA validator for Node",
-  "keywords": [],
+  "keywords": [
+    "google",
+    "captcha",
+    "recaptcha",
+    "node",
+    "nodejs",
+    "validate",
+    "validator"
+  ],
+  "license": "MIT",
+  "homepage": "https://monumentjs.github.io/package/recaptcha-validator",
+  "repository": "https://github.com/monumentjs/recaptcha.git",
+  "contributors": [
+    {
+      "name": "Alex Chugaev",
+      "email": "achugaev93@gmail.com"
+    }
+  ],
   "dependencies": {
     "@monument/core": "^0.9.0",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.3.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
