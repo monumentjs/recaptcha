@@ -1,0 +1,13 @@
+{
+  "name": "@monument/recaptcha-validator",
+  "version": "0.0.1",
+  "description": "Validates Google reCAPTCHA on server side",
+  "keywords": [],
+  "dependencies": {
+    "@monument/core": "^0.9.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.3.7"
+  }
+}

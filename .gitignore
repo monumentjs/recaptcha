@@ -1,0 +1,11 @@
+.idea
+.cache
+coverage
+dist
+docs
+node_modules
+*.js
+*.js.map
+*.d.ts
+
+!gulpfile.js
